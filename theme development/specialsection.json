@@ -1,4 +1,7 @@
 {
     "name": "Special section",
-    "type": "custom.section"
+    "type": "custom.section",
+    "sections": {},
+    "order": []
 }
+
