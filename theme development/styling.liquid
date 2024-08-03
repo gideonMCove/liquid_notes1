@@ -17,6 +17,11 @@ this would go above schema and beneath html
 }
 {% endstylesheet %}
 
+<script>
+    const a  = document.querySelector('#shopify-section-{{ section.id }}')
+    console.log(a)
+</script>
+
 {% comment %} 
 
 this would go above schema and beneath html
@@ -35,7 +40,7 @@ to get around that you need to inline them in html
     {% endif %}
 {% endfor %}
 
-<h1> {{ section.settings.text }}</h1>
+<h1 style ="color: {{ section.settings.color }}"> {{ section.settings.text }}</h1>
 
 {%  for block in section.blocks %}
     {%  if block.type == 'social' %}
